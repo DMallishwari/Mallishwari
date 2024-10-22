@@ -1,0 +1,196 @@
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git init
+Initialized empty Git repository in C:/Users/admin/Desktop/22361A0550/.git/
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git config --global user.name "mallishwari"
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git config --global user.email "mallishwari@gmail.com"
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        registration.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git add .
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git commit -m "registration"
+[master (root-commit) a800adf] registration
+ 1 file changed, 18 insertions(+)
+ create mode 100644 registration.html
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git log
+commit a800adf2ec26206662e544ebd9a2906932d78b7d (HEAD -> master)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:31:23 2024 +0530
+
+    registration
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git branch Test
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git checkout Test
+Switched to branch 'Test'
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ touch login.html
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git status
+On branch Test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        login.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git commit -m "login"
+On branch Test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        login.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git status
+On branch Test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        login.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git log
+commit a800adf2ec26206662e544ebd9a2906932d78b7d (HEAD -> Test, master)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:31:23 2024 +0530
+
+    registration
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git add .
+
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git log
+commit a800adf2ec26206662e544ebd9a2906932d78b7d (HEAD -> Test, master)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:31:23 2024 +0530
+
+    registration
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git status
+On branch Test
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   login.html
+
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git log
+commit a800adf2ec26206662e544ebd9a2906932d78b7d (HEAD -> Test, master)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:31:23 2024 +0530
+
+    registration
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git add .
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git commit -m "login"
+[Test d429d4f] login
+ 1 file changed, 10 insertions(+)
+ create mode 100644 login.html
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git log
+commit d429d4fec3432375c1dc1a985ac3cf08caef5460 (HEAD -> Test)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:45:49 2024 +0530
+
+    login
+
+commit a800adf2ec26206662e544ebd9a2906932d78b7d (master)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:31:23 2024 +0530
+
+    registration
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (Test)
+$ git checkout master
+Switched to branch 'master'
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git log
+commit a800adf2ec26206662e544ebd9a2906932d78b7d (HEAD -> master)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:31:23 2024 +0530
+
+    registration
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git merge Test
+Updating a800adf..d429d4f
+Fast-forward
+ login.html | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 login.html
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git log
+commit d429d4fec3432375c1dc1a985ac3cf08caef5460 (HEAD -> master, Test)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:45:49 2024 +0530
+
+    login
+
+commit a800adf2ec26206662e544ebd9a2906932d78b7d
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:31:23 2024 +0530
+
+    registration
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git diff
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git log
+commit d429d4fec3432375c1dc1a985ac3cf08caef5460 (HEAD -> master, Test)
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:45:49 2024 +0530
+
+    login
+
+commit a800adf2ec26206662e544ebd9a2906932d78b7d
+Author: mallishwari <mallishwari@gmail.com>
+Date:   Tue Oct 15 11:31:23 2024 +0530
+
+    registration
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$ git diff
+
+admin@DESKTOP-UOEHENC MINGW64 ~/Desktop/22361A0550 (master)
+$
